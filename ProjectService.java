@@ -25,5 +25,17 @@ public class ProjectService {
 		
 	}
 
-
+public List<Project> fetchAllProjects() {
+	return projectDao.fetchAllProjects();
+	
+}
+	/**
+	 * This method calls the project DAO to get all project details, including materials, steps, and categories.
+	 * 
+	 * @param projectId The Project ID.
+	 * @return A project object if successful.
+	 * @throws NoSuchElementExpectation Thrown if the project with the given ID does not exist.
+	 * 
+	 */
+	
 }
